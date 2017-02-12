@@ -1,5 +1,4 @@
 import os
-import time
 import json
 
 
@@ -35,12 +34,11 @@ def main():
             'all': []
         }
 
-    while True:
-        monitor(previous_times, paths['current'])
-        with open('previous_times.json', 'w') as fout:
-            fout.write(json.dumps(previous_times))
-        time.sleep(5)
+    monitor(previous_times, paths['current'])
+    with open('previous_times.json', 'w') as fout:
+        fout.write(json.dumps(previous_times))
 
+    print 'Check finished'
 
 if __name__ == '__main__':
     main()

@@ -1,8 +1,0 @@
-1. Monitor multiple files/directories modification time
-    1.1 Notify if changed, include file names
-    1.2 Allow 1 hour delay
-    1.3 Snooze notification
-2. Auto start on windows sign in
-    2.1 specify what to monitor when launch
-    2.2 save all paths history
-3. Change monitor list during middle of day
