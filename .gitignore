@@ -1,5 +1,7 @@
 .idea
 
+previous_times.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

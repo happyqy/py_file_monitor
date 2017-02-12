@@ -20,8 +20,11 @@ def monitor(previous_times, paths):
 
 
 def main():
-    with open('previous_times.json') as fin:
-        previous_times = json.loads(fin.read())  # includes all precious times, key: path, value: timestamp
+    if os.path.exists('previous_times.json'):
+        with open('previous_times.json') as fin:
+            previous_times = json.loads(fin.read())  # includes all precious times, key: path, value: timestamp
+    else:
+        previous_times = {}
     while True:
         monitor(previous_times, ['C:/Users/QY/Desktop/test.txt', 'C:/Users/QY/Desktop/test'])
         with open('previous_times.json', 'w') as fout:
