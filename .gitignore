@@ -1,6 +1,7 @@
 .idea
 
 previous_times.json
+monitor_list.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
